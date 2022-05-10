@@ -8,6 +8,9 @@ the people who have not studied this kind of materials related to genomics or co
 science
 We will take the topic and show the diagram of the tree and families of covid in a simple 
 way that everyone interested in the topic will understand it
+We used ML based on python 
+Python libraries like:biopython, pandas, numpy, ...
+Python tools like:viztree, entropy, ...
 
 # [📌 project Video 📹]( https://youtu.be/fTSap9grXgU)
 # ◼️Contributors
