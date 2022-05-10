@@ -1,6 +1,6 @@
 # Genomics-project-phylogenetic-tree of covid-19
 # [📌 project Video 📹]( https://youtu.be/fTSap9grXgU)
-<p style="font-size:50px;">Contributors </p>
+<b >Contributors </b>
 <hr>
 <table>
   <tbody><tr>    
