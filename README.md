@@ -21,5 +21,5 @@
   <img class="alignleft  wp-image-6003" title="Lea Scheppke" src="http://blog.biocision.com/wp-content/uploads/2012/12/Lea_Scheppke.jpg" alt="Lea Scheppke" width="26" height="30" />
 </a>
 <a href="https://github.com/ManarMagdy99">
-  <img class="alignleft  wp-image-6003" title="manar madgy" src="https://avatars.githubusercontent.com/u/101019557?v=4" alt="Sandeep Pingle" width="40" height="35" />
+  <img class="alignleft  wp-image-6003" title="manar madgy" src="https://avatars.githubusercontent.com/u/101019557?v=4" alt="Sandeep Pingle" width="55" height="60" />
 </a>
