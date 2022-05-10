@@ -1,4 +1,14 @@
 # Genomics-project-phylogenetic-tree of covid-19
+
+Website contains phylogenetic network of SARS-CoV-2 genomes sampled from across 
+the world. These genomes are closely related and under evolutionary selection in their 
+human hosts
+The problem is that the usual sites that shows or talks about that topic are complicated for
+the people who have not studied this kind of materials related to genomics or computer 
+science
+We will take the topic and show the diagram of the tree and families of covid in a simple 
+way that everyone interested in the topic will understand it
+
 # [📌 project Video 📹]( https://youtu.be/fTSap9grXgU)
 # Contributors
 <hr>
