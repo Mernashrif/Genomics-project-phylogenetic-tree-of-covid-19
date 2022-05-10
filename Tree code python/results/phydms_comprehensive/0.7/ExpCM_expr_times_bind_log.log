@@ -1,0 +1,186 @@
+2020-08-12 13:31:13,691 - INFO - Beginning execution of phydms in directory /Users/skhilton/Desktop/SARS-phydms
+
+2020-08-12 13:31:13,691 - INFO - Progress is being logged to results/phydms_comprehensive/0.7/ExpCM_expr_times_bind_log.log
+
+2020-08-12 13:31:13,691 - INFO - Version information:
+	Time and date: Wed Aug 12 13:31:12 2020
+	Platform: Darwin-19.3.0-x86_64-i386-64bit
+	Python version: 3.7.7 (default, May  6 2020, 04:59:01)  [Clang 4.0.1 (tags/RELEASE_401/final)]
+	phydms version: 2.3.8
+	Bio version: 1.77
+	cython version: 0.29.19
+	numpy version: 1.18.1
+	scipy version: 1.4.1
+	matplotlib version: 3.2.1
+	natsort version: 7.0.1
+	sympy version: 1.6
+	six version: 1.14.0
+	pandas version: 1.0.3
+	pyvolve version: 1.0.1
+	statsmodels version: 0.11.1
+	weblogolib version: 3.5.0
+	PyPDF2 version: 1.26.0
+
+2020-08-12 13:31:13,691 - INFO - Parsed the following arguments:
+	alignment = results/alignments/RBD_0.7.fasta
+	tree = results/phydms_comprehensive/0.7/RAxML_tree.newick
+	model = ('ExpCM', 'results/prefs/expr_times_bind.csv')
+	outprefix = results/phydms_comprehensive/0.7/ExpCM_expr_times_bind
+	brlen = optimize
+	gammaomega = False
+	gammabeta = False
+	omegabysite = True
+	omegabysite_fixsyn = False
+	diffprefsbysite = True
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = False
+	divpressure = None
+	ncpus = 1
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2020-08-12 13:31:13,692 - INFO - Random number seed: 1
+
+2020-08-12 13:31:13,692 - INFO - Reading alignment from results/alignments/RBD_0.7.fasta
+2020-08-12 13:31:13,763 - INFO - Read 23 aligned sequences from results/alignments/RBD_0.7.fasta, each consisting of 201 codons.
+
+2020-08-12 13:31:13,764 - INFO - The model will be an ExpCM informed by site-specific amino-acid preferences in results/prefs/expr_times_bind.csv
+2020-08-12 13:31:14,060 - INFO - Successfully read site-specific amino-acid preferences for all 201 sites.
+
+2020-08-12 13:31:14,060 - INFO - Nucleotide frequency parameters phi will be set so stationary state matches alignment nucleotide frequencies of A = 0.272, C = 0.193, G = 0.187, T = 0.348
+
+2020-08-12 13:31:14,509 - INFO - Reading tree from results/phydms_comprehensive/0.7/RAxML_tree.newick
+2020-08-12 13:31:14,511 - INFO - Tree has 23 tips.
+2020-08-12 13:31:14,514 - INFO - Adjusted 1 branch lengths up to minbrlen 1e-06
+
+2020-08-12 13:31:14,515 - INFO - Initializing TreeLikelihood..
+2020-08-12 13:31:17,834 - INFO - TreeLikelihood initialized.
+2020-08-12 13:31:17,834 - INFO - Maximizing log likelihood (initially -3262.90).
+2020-08-12 13:31:17,834 - INFO - Branch lengths will be optimized individually.
+2020-08-12 13:34:42,651 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -3262.90 to -3011.91 (14 iterations, 21 function evals)
+	Step 2: optimized branches, loglik went from -3011.91 to -3006.21 (70 iterations, 77 function evals)
+	Step 3: optimized parameters, loglik went from -3006.21 to -3006.19 (4 iterations, 7 function evals)
+	Step 4: optimized branches, loglik went from -3006.19 to -3006.19 (1 iterations, 4 function evals)
+2020-08-12 13:34:42,652 - INFO - Optimized log likelihood is -3006.19.
+2020-08-12 13:34:42,652 - INFO - Writing log likelihood to results/phydms_comprehensive/0.7/ExpCM_expr_times_bind_loglikelihood.txt
+2020-08-12 13:34:42,652 - INFO - Model parameters after optimization:
+	beta = 1.19858
+	kappa = 1.74693
+	omega = 0.302943
+	phiA = 0.281045
+	phiC = 0.17964
+	phiG = 0.160803
+2020-08-12 13:34:42,652 - INFO - Writing model parameters to results/phydms_comprehensive/0.7/ExpCM_expr_times_bind_modelparams.txt
+2020-08-12 13:34:42,652 - INFO - Writing the optimized tree to results/phydms_comprehensive/0.7/ExpCM_expr_times_bind_tree.newick
+
+2020-08-12 13:34:42,654 - INFO - 
+Fitting a different omega to each site to detect diversifying selection.
+2020-08-12 13:34:42,654 - INFO - Will fit different synonymous rate for each site.
+2020-08-12 13:34:42,654 - INFO - Fitting with 1 CPUs...
+2020-08-12 13:35:49,847 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:477: DeprecationWarning: scipy.where is deprecated and will be removed in SciPy 2.0.0, use numpy.where instead
+  pvalues, 1)
+
+2020-08-12 13:35:49,848 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:480: DeprecationWarning: scipy.minimum is deprecated and will be removed in SciPy 2.0.0, use numpy.minimum instead
+  qvalues = scipy.minimum(qvalues, qvalues_sign)
+
+2020-08-12 13:35:49,848 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:477: DeprecationWarning: scipy.where is deprecated and will be removed in SciPy 2.0.0, use numpy.where instead
+  pvalues, 1)
+
+2020-08-12 13:35:49,848 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:480: DeprecationWarning: scipy.minimum is deprecated and will be removed in SciPy 2.0.0, use numpy.minimum instead
+  qvalues = scipy.minimum(qvalues, qvalues_sign)
+
+2020-08-12 13:35:49,848 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:481: DeprecationWarning: scipy.argsort is deprecated and will be removed in SciPy 2.0.0, use numpy.argsort instead
+  sortindex = scipy.argsort(qvalues)
+
+2020-08-12 13:35:49,848 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:482: DeprecationWarning: scipy.take is deprecated and will be removed in SciPy 2.0.0, use numpy.take instead
+  qvalues = scipy.take(qvalues, sortindex)
+
+2020-08-12 13:35:49,848 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:483: DeprecationWarning: scipy.take is deprecated and will be removed in SciPy 2.0.0, use numpy.take instead
+  omega_strs = scipy.take(omega_strs, sortindex)
+
+2020-08-12 13:35:49,849 - INFO - Completed fitting the site-specific omega values.
+2020-08-12 13:35:49,849 - INFO - Writing results to results/phydms_comprehensive/0.7/ExpCM_expr_times_bind_omegabysite.txt
+
+2020-08-12 13:35:49,849 - INFO - 
+Fitting differential preferences for each site to detect differential selection.
+2020-08-12 13:35:49,849 - INFO - For the fitting, using ExpCM_fitprefs2 implementation as specified by fitprefsmethod = 2
+2020-08-12 13:35:49,849 - INFO - Fitting with 1 CPUs...
+2020-08-12 13:36:29,171 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/lib/python3.7/site-packages/phydmslib/treelikelihood.py:452: UserWarning: Optimization failure 1
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -22.09 to -20.18 (6 iterations, 49 function evals)
+
+Re-trying with different initial params.
+  "Re-trying with different initial params.")
+
+2020-08-12 13:41:04,943 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/lib/python3.7/site-packages/phydmslib/treelikelihood.py:452: UserWarning: Optimization failure 1
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -30.16 to -29.70 (4 iterations, 47 function evals)
+
+Re-trying with different initial params.
+  "Re-trying with different initial params.")
+
+2020-08-12 13:42:31,506 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/lib/python3.7/site-packages/phydmslib/treelikelihood.py:452: UserWarning: Optimization failure 1
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -60.48 to -59.62 (5 iterations, 47 function evals)
+
+Re-trying with different initial params.
+  "Re-trying with different initial params.")
+
+2020-08-12 13:43:57,254 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/lib/python3.7/site-packages/phydmslib/treelikelihood.py:452: UserWarning: Optimization failure 1
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -39.35 to -39.33 (2 iterations, 50 function evals)
+
+Re-trying with different initial params.
+  "Re-trying with different initial params.")
+
+2020-08-12 13:44:15,390 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/lib/python3.7/site-packages/phydmslib/treelikelihood.py:452: UserWarning: Optimization failure 1
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -34.46 to -33.98 (5 iterations, 51 function evals)
+
+Re-trying with different initial params.
+  "Re-trying with different initial params.")
+
+2020-08-12 13:44:33,526 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:82: UserWarning: Optimization failed with primary model; trying secondary model.
+Error message:
+Optimization failure 2
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -34.46 to -33.98 (5 iterations, 51 function evals)
+Step 1: optimized parameters, loglik went from -34.46 to -34.09 (30 iterations, 124 function evals)
+  "Error message:\n{0}".format(str(err)))
+
+2020-08-12 13:45:15,877 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/lib/python3.7/site-packages/phydmslib/treelikelihood.py:452: UserWarning: Optimization failure 1
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -22.68 to -22.42 (2 iterations, 43 function evals)
+
+Re-trying with different initial params.
+  "Re-trying with different initial params.")
+
+2020-08-12 13:45:28,190 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/lib/python3.7/site-packages/phydmslib/treelikelihood.py:452: UserWarning: Optimization failure 1
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -18.08 to -16.94 (5 iterations, 47 function evals)
+
+Re-trying with different initial params.
+  "Re-trying with different initial params.")
+
+2020-08-12 13:45:44,359 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:82: UserWarning: Optimization failed with primary model; trying secondary model.
+Error message:
+Optimization failure 2
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -18.08 to -16.94 (5 iterations, 47 function evals)
+Step 1: optimized parameters, loglik went from -18.08 to -16.73 (31 iterations, 108 function evals)
+  "Error message:\n{0}".format(str(err)))
+
+2020-08-12 13:48:43,891 - INFO - Completed fitting site-specific differential preferences.
+2020-08-12 13:48:43,893 - INFO - Writing results to results/phydms_comprehensive/0.7/ExpCM_expr_times_bind_diffprefsbysite.txt
+
+2020-08-12 13:48:43,896 - INFO - Successful completion of phydms

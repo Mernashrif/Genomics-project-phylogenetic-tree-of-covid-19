@@ -1,0 +1,111 @@
+2020-08-12 17:50:56,825 - INFO - Beginning execution of phydms_comprehensive in directory /Users/skhilton/Desktop/SARS-phydms
+
+2020-08-12 17:50:56,825 - INFO - Progress is being logged to results/phydms_comprehensive/0.6/log.log
+
+2020-08-12 17:50:56,825 - INFO - Version information:
+	Time and date: Wed Aug 12 17:50:55 2020
+	Platform: Darwin-19.3.0-x86_64-i386-64bit
+	Python version: 3.7.7 (default, May  6 2020, 04:59:01)  [Clang 4.0.1 (tags/RELEASE_401/final)]
+	phydms version: 2.3.8
+	Bio version: 1.77
+	cython version: 0.29.19
+	numpy version: 1.18.1
+	scipy version: 1.4.1
+	matplotlib version: 3.2.1
+	natsort version: 7.0.1
+	sympy version: 1.6
+	six version: 1.14.0
+	pandas version: 1.0.3
+	pyvolve version: 1.0.1
+	statsmodels version: 0.11.1
+	weblogolib version: 3.5.0
+	PyPDF2 version: 1.26.0
+
+2020-08-12 17:50:56,826 - INFO - Parsed the following command-line arguments:
+	outprefix = results/phydms_comprehensive/0.6/
+	alignment = results/alignments/RBD_0.6.fasta
+	prefsfiles = ['results/prefs/bind.csv', 'results/prefs/expr.csv', 'results/prefs/expr_times_bind.csv', 'results/prefs/max_entropy.csv']
+	raxml = raxmlHPC
+	tree = None
+	ncpus = 2
+	brlen = optimize
+	omegabysite = True
+	diffprefsbysite = True
+	gammaomega = False
+	gammabeta = False
+	noavgprefs = True
+	randprefs = False
+
+2020-08-12 17:50:56,826 - INFO - Checking that the alignment results/alignments/RBD_0.6.fasta is valid...
+2020-08-12 17:50:56,954 - INFO - Valid alignment specifying 45 sequences of length 603.
+
+2020-08-12 17:50:56,954 - INFO - Tree not specified.
+2020-08-12 17:50:56,969 - INFO - Inferring tree with RAxML using command raxmlHPC
+2020-08-12 17:51:04,809 - INFO - RAxML inferred tree is now named results/phydms_comprehensive/0.6/RAxML_tree.newick
+2020-08-12 17:51:04,819 - INFO - Removed the following existing files that have names that match the names of output files that will be created: results/phydms_comprehensive/0.6/modelcomparison.md, results/phydms_comprehensive/0.6/YNGKP_M0_log.log, results/phydms_comprehensive/0.6/YNGKP_M0_tree.newick, results/phydms_comprehensive/0.6/YNGKP_M0_loglikelihood.txt, results/phydms_comprehensive/0.6/YNGKP_M0_modelparams.txt, results/phydms_comprehensive/0.6/YNGKP_M0_omegabysite.txt, results/phydms_comprehensive/0.6/YNGKP_M5_log.log, results/phydms_comprehensive/0.6/YNGKP_M5_tree.newick, results/phydms_comprehensive/0.6/YNGKP_M5_loglikelihood.txt, results/phydms_comprehensive/0.6/YNGKP_M5_modelparams.txt, results/phydms_comprehensive/0.6/YNGKP_M5_omegabysite.txt, results/phydms_comprehensive/0.6/ExpCM_bind_log.log, results/phydms_comprehensive/0.6/ExpCM_bind_tree.newick, results/phydms_comprehensive/0.6/ExpCM_bind_loglikelihood.txt, results/phydms_comprehensive/0.6/ExpCM_bind_modelparams.txt, results/phydms_comprehensive/0.6/ExpCM_bind_omegabysite.txt, results/phydms_comprehensive/0.6/ExpCM_bind_diffprefsbysite.txt, results/phydms_comprehensive/0.6/ExpCM_expr_log.log, results/phydms_comprehensive/0.6/ExpCM_expr_tree.newick, results/phydms_comprehensive/0.6/ExpCM_expr_loglikelihood.txt, results/phydms_comprehensive/0.6/ExpCM_expr_modelparams.txt, results/phydms_comprehensive/0.6/ExpCM_expr_omegabysite.txt, results/phydms_comprehensive/0.6/ExpCM_expr_diffprefsbysite.txt, results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_log.log, results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_tree.newick, results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_loglikelihood.txt, results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_modelparams.txt, results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_omegabysite.txt, results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_diffprefsbysite.txt, results/phydms_comprehensive/0.6/ExpCM_max_entropy_log.log, results/phydms_comprehensive/0.6/ExpCM_max_entropy_tree.newick, results/phydms_comprehensive/0.6/ExpCM_max_entropy_loglikelihood.txt, results/phydms_comprehensive/0.6/ExpCM_max_entropy_modelparams.txt, results/phydms_comprehensive/0.6/ExpCM_max_entropy_omegabysite.txt, results/phydms_comprehensive/0.6/ExpCM_max_entropy_diffprefsbysite.txt
+
+2020-08-12 17:51:04,820 - INFO - Starting analysis to optimize tree in results/phydms_comprehensive/0.6/RAxML_tree.newick using model YNGKP_M0. The command is: phydms results/alignments/RBD_0.6.fasta results/phydms_comprehensive/0.6/RAxML_tree.newick YNGKP_M0 results/phydms_comprehensive/0.6/YNGKP_M0 --brlen optimize --omegabysite --ncpus 1
+
+2020-08-12 17:51:04,820 - INFO - Starting analysis to optimize tree in results/phydms_comprehensive/0.6/RAxML_tree.newick using model YNGKP_M5. The command is: phydms results/alignments/RBD_0.6.fasta results/phydms_comprehensive/0.6/RAxML_tree.newick YNGKP_M5 results/phydms_comprehensive/0.6/YNGKP_M5 --brlen optimize --omegabysite --ncpus 1
+
+2020-08-12 17:51:04,820 - INFO - Starting analysis to optimize tree in results/phydms_comprehensive/0.6/RAxML_tree.newick using model ExpCM_bind. The command is: phydms results/alignments/RBD_0.6.fasta results/phydms_comprehensive/0.6/RAxML_tree.newick ExpCM_results/prefs/bind.csv results/phydms_comprehensive/0.6/ExpCM_bind --brlen optimize --omegabysite --diffprefsbysite --ncpus 1
+
+2020-08-12 17:51:04,820 - INFO - Starting analysis to optimize tree in results/phydms_comprehensive/0.6/RAxML_tree.newick using model ExpCM_expr. The command is: phydms results/alignments/RBD_0.6.fasta results/phydms_comprehensive/0.6/RAxML_tree.newick ExpCM_results/prefs/expr.csv results/phydms_comprehensive/0.6/ExpCM_expr --brlen optimize --omegabysite --diffprefsbysite --ncpus 1
+
+2020-08-12 17:51:04,820 - INFO - Starting analysis to optimize tree in results/phydms_comprehensive/0.6/RAxML_tree.newick using model ExpCM_expr_times_bind. The command is: phydms results/alignments/RBD_0.6.fasta results/phydms_comprehensive/0.6/RAxML_tree.newick ExpCM_results/prefs/expr_times_bind.csv results/phydms_comprehensive/0.6/ExpCM_expr_times_bind --brlen optimize --omegabysite --diffprefsbysite --ncpus 1
+
+2020-08-12 17:51:04,820 - INFO - Starting analysis to optimize tree in results/phydms_comprehensive/0.6/RAxML_tree.newick using model ExpCM_max_entropy. The command is: phydms results/alignments/RBD_0.6.fasta results/phydms_comprehensive/0.6/RAxML_tree.newick ExpCM_results/prefs/max_entropy.csv results/phydms_comprehensive/0.6/ExpCM_max_entropy --brlen optimize --omegabysite --diffprefsbysite --ncpus 1
+
+2020-08-12 17:56:55,730 - INFO - Analysis completed for YNGKP_M0
+2020-08-12 17:56:55,731 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M0_log.log
+2020-08-12 17:56:55,731 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M0_tree.newick
+2020-08-12 17:56:55,731 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M0_loglikelihood.txt
+2020-08-12 17:56:55,731 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M0_modelparams.txt
+2020-08-12 17:56:55,731 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M0_omegabysite.txt
+2020-08-12 17:56:55,731 - INFO - Analysis successful for YNGKP_M0
+
+2020-08-12 18:14:25,149 - INFO - Analysis completed for YNGKP_M5
+2020-08-12 18:14:25,153 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M5_log.log
+2020-08-12 18:14:25,153 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M5_tree.newick
+2020-08-12 18:14:25,153 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M5_loglikelihood.txt
+2020-08-12 18:14:25,153 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M5_modelparams.txt
+2020-08-12 18:14:25,154 - INFO - Found expected output file results/phydms_comprehensive/0.6/YNGKP_M5_omegabysite.txt
+2020-08-12 18:14:25,154 - INFO - Analysis successful for YNGKP_M5
+
+2020-08-12 18:23:55,653 - INFO - Analysis completed for ExpCM_bind
+2020-08-12 18:23:55,656 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_bind_log.log
+2020-08-12 18:23:55,656 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_bind_tree.newick
+2020-08-12 18:23:55,656 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_bind_loglikelihood.txt
+2020-08-12 18:23:55,656 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_bind_modelparams.txt
+2020-08-12 18:23:55,656 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_bind_omegabysite.txt
+2020-08-12 18:23:55,656 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_bind_diffprefsbysite.txt
+2020-08-12 18:23:55,656 - INFO - Analysis successful for ExpCM_bind
+
+2020-08-12 18:46:44,983 - INFO - Analysis completed for ExpCM_expr
+2020-08-12 18:46:44,986 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_log.log
+2020-08-12 18:46:44,986 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_tree.newick
+2020-08-12 18:46:44,986 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_loglikelihood.txt
+2020-08-12 18:46:44,986 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_modelparams.txt
+2020-08-12 18:46:44,986 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_omegabysite.txt
+2020-08-12 18:46:44,986 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_diffprefsbysite.txt
+2020-08-12 18:46:44,987 - INFO - Analysis successful for ExpCM_expr
+
+2020-08-12 18:59:10,782 - INFO - Analysis completed for ExpCM_expr_times_bind
+2020-08-12 18:59:10,785 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_log.log
+2020-08-12 18:59:10,785 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_tree.newick
+2020-08-12 18:59:10,785 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_loglikelihood.txt
+2020-08-12 18:59:10,785 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_modelparams.txt
+2020-08-12 18:59:10,785 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_omegabysite.txt
+2020-08-12 18:59:10,785 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_expr_times_bind_diffprefsbysite.txt
+2020-08-12 18:59:10,785 - INFO - Analysis successful for ExpCM_expr_times_bind
+
+2020-08-12 19:11:29,996 - INFO - Analysis completed for ExpCM_max_entropy
+2020-08-12 19:11:29,999 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_max_entropy_log.log
+2020-08-12 19:11:29,999 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_max_entropy_tree.newick
+2020-08-12 19:11:29,999 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_max_entropy_loglikelihood.txt
+2020-08-12 19:11:29,999 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_max_entropy_modelparams.txt
+2020-08-12 19:11:30,000 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_max_entropy_omegabysite.txt
+2020-08-12 19:11:30,000 - INFO - Found expected output file results/phydms_comprehensive/0.6/ExpCM_max_entropy_diffprefsbysite.txt
+2020-08-12 19:11:30,000 - INFO - Analysis successful for ExpCM_max_entropy
+
+2020-08-12 19:11:31,022 - INFO - Successful completion of phydms_comprehensive

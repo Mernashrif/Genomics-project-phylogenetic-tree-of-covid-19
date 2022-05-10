@@ -1,0 +1,118 @@
+2020-08-12 17:51:07,050 - INFO - Beginning execution of phydms in directory /Users/skhilton/Desktop/SARS-phydms
+
+2020-08-12 17:51:07,051 - INFO - Progress is being logged to results/phydms_comprehensive/0.6/YNGKP_M5_log.log
+
+2020-08-12 17:51:07,051 - INFO - Version information:
+	Time and date: Wed Aug 12 17:51:06 2020
+	Platform: Darwin-19.3.0-x86_64-i386-64bit
+	Python version: 3.7.7 (default, May  6 2020, 04:59:01)  [Clang 4.0.1 (tags/RELEASE_401/final)]
+	phydms version: 2.3.8
+	Bio version: 1.77
+	cython version: 0.29.19
+	numpy version: 1.18.1
+	scipy version: 1.4.1
+	matplotlib version: 3.2.1
+	natsort version: 7.0.1
+	sympy version: 1.6
+	six version: 1.14.0
+	pandas version: 1.0.3
+	pyvolve version: 1.0.1
+	statsmodels version: 0.11.1
+	weblogolib version: 3.5.0
+	PyPDF2 version: 1.26.0
+
+2020-08-12 17:51:07,051 - INFO - Parsed the following arguments:
+	alignment = results/alignments/RBD_0.6.fasta
+	tree = results/phydms_comprehensive/0.6/RAxML_tree.newick
+	model = YNGKP_M5
+	outprefix = results/phydms_comprehensive/0.6/YNGKP_M5
+	brlen = optimize
+	gammaomega = False
+	gammabeta = False
+	omegabysite = True
+	omegabysite_fixsyn = False
+	diffprefsbysite = False
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = False
+	divpressure = None
+	ncpus = 1
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2020-08-12 17:51:07,051 - INFO - Random number seed: 1
+
+2020-08-12 17:51:07,051 - INFO - Reading alignment from results/alignments/RBD_0.6.fasta
+2020-08-12 17:51:07,188 - INFO - Read 45 aligned sequences from results/alignments/RBD_0.6.fasta, each consisting of 201 codons.
+
+2020-08-12 17:51:07,188 - INFO - Codon substitution model with be M5 version of YNGKP (Yang, Nielsen, Goldman, & Pederson. Genetics. 155:431-449).
+2020-08-12 17:51:07,196 - INFO - For this YNGKP_M5 model, omega will be drawn from 4 gamma-distributed categories.
+2020-08-12 17:51:07,205 - INFO - Reading tree from results/phydms_comprehensive/0.6/RAxML_tree.newick
+2020-08-12 17:51:07,206 - INFO - Tree has 45 tips.
+2020-08-12 17:51:07,215 - INFO - Adjusted 1 branch lengths up to minbrlen 1e-06
+
+2020-08-12 17:51:07,216 - INFO - Initializing TreeLikelihood..
+2020-08-12 17:51:10,426 - INFO - TreeLikelihood initialized.
+2020-08-12 17:51:10,426 - INFO - Maximizing log likelihood (initially -8008.17).
+2020-08-12 17:51:10,426 - INFO - Branch lengths will be optimized individually.
+2020-08-12 18:11:05,476 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -8008.17 to -6808.84 (16 iterations, 23 function evals)
+	Step 2: optimized branches, loglik went from -6808.84 to -6792.16 (162 iterations, 172 function evals)
+	Step 3: optimized parameters, loglik went from -6792.16 to -6791.42 (12 iterations, 14 function evals)
+	Step 4: optimized branches, loglik went from -6791.42 to -6791.36 (25 iterations, 30 function evals)
+	Step 5: optimized parameters, loglik went from -6791.36 to -6791.35 (4 iterations, 7 function evals)
+2020-08-12 18:11:05,478 - INFO - Optimized log likelihood is -6791.35.
+2020-08-12 18:11:05,478 - INFO - Writing log likelihood to results/phydms_comprehensive/0.6/YNGKP_M5_loglikelihood.txt
+2020-08-12 18:11:05,479 - INFO - Model parameters after optimization:
+	alpha_omega = 0.300001
+	beta_omega = 4.02802
+	kappa = 2.04289
+	phi0A = 0.267747
+	phi0C = 0.12981
+	phi0G = 0.274665
+	phi1A = 0.329155
+	phi1C = 0.260718
+	phi1G = 0.167201
+	phi2A = 0.259437
+	phi2C = 0.16056
+	phi2G = 0.116333
+2020-08-12 18:11:05,479 - INFO - Writing model parameters to results/phydms_comprehensive/0.6/YNGKP_M5_modelparams.txt
+2020-08-12 18:11:05,480 - INFO - Writing the optimized tree to results/phydms_comprehensive/0.6/YNGKP_M5_tree.newick
+
+2020-08-12 18:11:05,483 - INFO - 
+Fitting a different omega to each site to detect diversifying selection.
+2020-08-12 18:11:05,483 - INFO - Will fit different synonymous rate for each site.
+2020-08-12 18:11:05,483 - INFO - Fitting with 1 CPUs...
+2020-08-12 18:14:24,567 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:477: DeprecationWarning: scipy.where is deprecated and will be removed in SciPy 2.0.0, use numpy.where instead
+  pvalues, 1)
+
+2020-08-12 18:14:24,567 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:480: DeprecationWarning: scipy.minimum is deprecated and will be removed in SciPy 2.0.0, use numpy.minimum instead
+  qvalues = scipy.minimum(qvalues, qvalues_sign)
+
+2020-08-12 18:14:24,567 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:477: DeprecationWarning: scipy.where is deprecated and will be removed in SciPy 2.0.0, use numpy.where instead
+  pvalues, 1)
+
+2020-08-12 18:14:24,568 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:480: DeprecationWarning: scipy.minimum is deprecated and will be removed in SciPy 2.0.0, use numpy.minimum instead
+  qvalues = scipy.minimum(qvalues, qvalues_sign)
+
+2020-08-12 18:14:24,568 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:481: DeprecationWarning: scipy.argsort is deprecated and will be removed in SciPy 2.0.0, use numpy.argsort instead
+  sortindex = scipy.argsort(qvalues)
+
+2020-08-12 18:14:24,568 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:482: DeprecationWarning: scipy.take is deprecated and will be removed in SciPy 2.0.0, use numpy.take instead
+  qvalues = scipy.take(qvalues, sortindex)
+
+2020-08-12 18:14:24,568 - WARNING - /Users/skhilton/miniconda3/envs/SARS-phydms/bin/phydms:483: DeprecationWarning: scipy.take is deprecated and will be removed in SciPy 2.0.0, use numpy.take instead
+  omega_strs = scipy.take(omega_strs, sortindex)
+
+2020-08-12 18:14:24,568 - INFO - Completed fitting the site-specific omega values.
+2020-08-12 18:14:24,569 - INFO - Writing results to results/phydms_comprehensive/0.6/YNGKP_M5_omegabysite.txt
+
+2020-08-12 18:14:24,569 - INFO - Successful completion of phydms
